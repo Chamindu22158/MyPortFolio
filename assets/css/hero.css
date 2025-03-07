@@ -147,3 +147,17 @@
     }
 }
 
+@media screen and (max-width: 320px) {
+    #Name {
+        font-size: 1.6em;
+        left: 2vw;
+    }
+
+    #my-pic {
+        width: 377px;
+    }
+
+    #welcome-sec img#moon{
+        left: 147px;
+    }
+}
