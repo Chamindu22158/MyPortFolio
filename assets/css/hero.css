@@ -1,0 +1,108 @@
+#welcome-sec{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#2b1055,#7597de);
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+#welcome-sec #moon,
+#welcome-sec #mountains_front,
+#welcome-sec #mountains_behind{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    overflow: hidden;
+}
+#welcome-sec img#moon{
+    mix-blend-mode: screen;
+    left: 40px;
+}
+.color{
+    color: #FFA600;
+}
+#welcome-sec img#mountains_front{
+    z-index: 10;
+}
+#my-pic {
+    position: absolute;
+    top: 53%;
+    left: 25%;
+
+
+    transform: translateY(-50%);
+    width: 550px;
+    height: 100%;
+    z-index: 4;
+    object-fit: cover;
+    pointer-events: none;
+    overflow: hidden;
+}
+#text{
+    position: absolute;
+    right: -319px;
+    bottom: 150px;
+    background: linear-gradient(#E3EAF4, #8B9ED1); /* Lighter blue gradient for readability */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+    font-size: 7.5vw;
+    z-index: 9;
+}
+#Name{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15vh;
+    margin: auto;
+    height: fit-content;
+    font-family: "Inter", sans-serif;
+    font-size: 2em;
+    color: white;
+    transform: scale(1) rotate(0deg);
+    transition: transform 0.5s ease;
+}
+#Name:hover {
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 1251px) {
+    #text{
+        right: -612px;
+        font-size: 6.5em;
+    }
+
+    #welcome-sec img#moon{
+        left: 41px;
+    }
+
+    #my-pic {
+        width: 550px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #text{
+        right: -612px;
+        font-size: 6.5em;
+    }
+
+    #welcome-sec img#moon{
+        left: 41px;
+    }
+
+    #my-pic {
+        width: 550px;
+    }
+
+    #welcome-sec img#moon{
+        left: 147px;
+    }
+}
+
