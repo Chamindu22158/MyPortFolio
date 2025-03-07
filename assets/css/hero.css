@@ -106,3 +106,44 @@
     }
 }
 
+@media screen and (max-width: 769px) {
+    #Name {
+        font-size: 1.8em;
+        left: 10vw;
+    }
+
+    #text{
+        right: -651px;
+    }
+
+    #my-pic {
+        width: 500px;
+        left: 21%;
+    }
+
+    #welcome-sec img#moon{
+        left: 147px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #Name {
+        font-size: 1.8em;
+        left: 5vw;
+    }
+
+    #text{
+        right: -550px;
+        font-size: 4.5em;
+    }
+
+    #my-pic {
+        width: 432px;
+        left: 0%;
+    }
+
+    #welcome-sec img#moon{
+        left: 147px;
+    }
+}
+
