@@ -8,7 +8,17 @@
     transition: background 2s ease-in-out;
 }
 
-
+.techSkill {
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #F4FF2B;
+    text-align: center;
+    margin: 0 auto 40px;
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.3), 5px 5px 15px rgba(0, 0, 0, 0.7);
+    animation: pulse-glow 2.5s infinite alternate ease-in-out, color-glow 3s infinite alternate ease-in-out;
+    transition: transform 0.2s ease;
+}
 
 @keyframes pulse-glow {
     0% {
