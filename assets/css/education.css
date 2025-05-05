@@ -1,0 +1,152 @@
+#eduSec {
+    background: #0E0B01;
+    padding: 0 5%;
+    position: relative;
+    height: auto;
+}
+
+.timeLine {
+    position: relative;
+    padding: 50px 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 50px;
+    width: 100%;
+    position: relative;
+}
+
+.part-circle {
+    width: 35px;
+    height: 35px;
+    background-color: #00FF08;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #15181E;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.timeLine::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #00FF08;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+.textBox {
+    background: linear-gradient(to right, #47d447, white);
+    border-radius: 6px;
+    font-size: 15px;
+    padding: 20px;
+    width: 45%;
+    color: #000000;
+    z-index: 2;
+    position: relative;
+}
+
+.right-container {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.left-container {
+    flex-direction: row;
+    text-align: left;
+}
+
+.right-container-arrow,
+.left-container-arrow {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.right-container-arrow {
+    top: 50%;
+    right: -20px;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #00FF08;
+}
+
+.left-container-arrow {
+    top: 50%;
+    left: -20px;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #00FF08 transparent transparent;
+}
+
+.year {
+    max-width: max-content;
+    color: #0E0B01;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.topic {
+    font-size: 22px;
+    font-weight: 600;
+    color: #F4FF2B;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textBox {
+        width: 80%;
+        text-align: center;
+    }
+
+    .right-container-arrow,
+    .left-container-arrow {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .textBox {
+        width: 90%;
+    }
+
+    .part-circle {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .mainH {
+        font-size: 28px;
+    }
+
+    .subH {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .mainH {
+        font-size: 22px;
+    }
+}
