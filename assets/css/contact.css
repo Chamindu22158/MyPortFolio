@@ -1,0 +1,159 @@
+.contact-sec {
+    background-color: #0E0B01;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+}
+
+.form-email {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.email {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #FFB600;
+    border-radius: 25px;
+    width: 300px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background-color: #ffffff;
+}
+
+.email:focus {
+    border-color: #FFA000;
+    box-shadow: 0 0 5px rgba(255, 182, 0, 0.5);
+}
+
+.sub-bt {
+    background: linear-gradient(90deg, #FFB600, #FFA000);
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sub-bt:hover {
+    background: linear-gradient(90deg, #FFA000, #FFB600);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#con-double-sec {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 1000px;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+#left-sec, .right-sec {
+    flex: 2;
+    padding: 20px;
+}
+
+.my-sto, .get-in-touch {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #FFB600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.a-link a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.a-link a:hover {
+    color: #FFB600;
+    background-color: rgba(255, 182, 0, 0.1);
+    border-bottom: 1px solid #FFB600;
+}
+
+.img-contact {
+    width: 30px;
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+.img-contact:hover {
+    transform: scale(1.1);
+}
+
+.data-contact {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.data-contact:hover {
+    color: #FFB600;
+}
+
+.show-icons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.show-icons img {
+    width: 30px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.show-icons img:hover {
+    filter: brightness(1.2);
+}
+
+@media (max-width: 768px) {
+    .email {
+        width: 90%;
+    }
+
+    #con-double-sec {
+        flex-direction: column;
+        align-items: center;
+        gap: 38px;
+    }
+
+    #left-sec, .right-sec {
+        flex: 1;
+        padding: 10px;
+    }
+
+    .my-sto, .get-in-touch {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 362px) {
+    .data-contact {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 321px) {
+    .data-contact {
+        font-size: 12px;
+    }
+}
