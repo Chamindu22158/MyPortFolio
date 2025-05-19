@@ -10,6 +10,7 @@
     overflow: hidden;
     scroll-behavior: smooth;
 }
+
 #welcome-sec #moon,
 #welcome-sec #mountains_front,
 #welcome-sec #mountains_behind{
@@ -20,10 +21,12 @@
     pointer-events: none;
     overflow: hidden;
 }
+
 #welcome-sec img#moon{
     mix-blend-mode: screen;
     left: 40px;
 }
+
 .color{
     color: #FFA600;
 }
@@ -44,6 +47,7 @@
     pointer-events: none;
     overflow: hidden;
 }
+
 #text{
     position: absolute;
     right: -319px;
@@ -55,6 +59,19 @@
     font-size: 7.5vw;
     z-index: 9;
 }
+
+/*#btnexplore {
+    position: absolute;
+    background: #ffffff;
+    color: #2b1055;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.5em;
+    transform: translateY(150px);
+    z-index: 5;
+}*/
+
 #Name{
     position: absolute;
     top: 0;
@@ -68,6 +85,7 @@
     transform: scale(1) rotate(0deg);
     transition: transform 0.5s ease;
 }
+
 #Name:hover {
     transform: scale(1.2);
 }
